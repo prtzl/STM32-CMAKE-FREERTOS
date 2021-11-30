@@ -115,7 +115,7 @@ target_compile_definitions(${EXECUTABLE} PRIVATE
 
 # Add header directories (AFTER add_executable !!)
 target_include_directories(${EXECUTABLE} PRIVATE
-    ${CUBEMX_INCLUDE_DIRECTORIES})
+    ${CUBEMX_INCLUDE_DIRECTORIES}
     ${PROJECT_INCLUDE_DIRECTORIES})
 
 # Compiler and linker options
