@@ -72,9 +72,6 @@ const osThreadAttr_t Blink03_attributes = {
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void MX_FREERTOS_Init(void);
-void StartTask01(void *argument);
-void StartTask02(void *argument);
-void StartTask03(void *argument);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -121,13 +118,6 @@ int main(void)
 
   /* Init scheduler */
   osKernelInitialize();  /* Call init function for freertos objects (in freertos.c) */
-  Blink01Handle = osThreadNew(StartTask01, NULL, &Blink01_attributes);
-
-  /* creation of Blink02 */
-  Blink02Handle = osThreadNew(StartTask02, NULL, &Blink02_attributes);
-
-  /* creation of Blink03 */
-  Blink03Handle = osThreadNew(StartTask03, NULL, &Blink03_attributes);
   MX_FREERTOS_Init();
   /* Start scheduler */
   osKernelStart();

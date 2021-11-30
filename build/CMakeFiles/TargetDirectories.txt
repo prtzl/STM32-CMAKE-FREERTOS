@@ -1,3 +1,0 @@
-/home/rawinza555/Freertos_Make/TestFreeRTOSMake/build/CMakeFiles/rebuild_cache.dir
-/home/rawinza555/Freertos_Make/TestFreeRTOSMake/build/CMakeFiles/edit_cache.dir
-/home/rawinza555/Freertos_Make/TestFreeRTOSMake/build/CMakeFiles/NUCLEOH7_CMAKE.dir
